@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Semana 3 - HTML y CSS</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        'serif': ['Playfair Display', 'serif'],
+                        'sans': ['Inter', 'sans-serif']
+                    },
+                    colors: {
+                        'warm-brown': '#B8860B',
+                        'light-gray': '#F5F5F5',
+                        'medium-gray': '#E5E5E5',
+                        'dark-gray': '#4A4A4A'
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+<body class="bg-light-gray font-sans text-dark-gray">
+    <!-- Header -->
+    <header class="bg-white shadow-sm">
+        <nav class="container mx-auto px-6 py-6">
+            <div class="flex items-center justify-between">
+                <h1 class="font-serif text-3xl font-medium text-warm-brown">SEMANA 3</h1>
+                <button onclick="window.close()" class="bg-dark-gray hover:bg-gray-600 text-white px-6 py-2 rounded transition-colors">
+                    Cerrar
+                </button>
+            </div>
+        </nav>
+    </header>
+
+    <div class="container mx-auto px-6 py-12">
+        <!-- Título del tema -->
+        <div class="bg-white rounded-lg shadow-sm p-12 mb-12">
+            <div class="text-center mb-8">
+                <div class="flex items-center justify-center mb-6">
+                    <div class="h-px bg-gray-300 w-16"></div>
+                    <h2 class="font-serif text-4xl font-medium text-dark-gray mx-6">HTML Básico y Avanzado, CSS Básico y Avanzado</h2>
+                    <div class="h-px bg-gray-300 w-16"></div>
+                </div>
+                <p class="text-xl text-gray-600 leading-relaxed max-w-4xl mx-auto">
+                    Fundamentos y técnicas avanzadas de HTML para estructura semántica y CSS para diseño, 
+                    layout y presentación visual en el desarrollo web moderno.
+                </p>
+            </div>
+        </div>
+
+        <!-- Temas Aprendidos -->
+        <div class="bg-white rounded-lg shadow-sm p-12 mb-12">
+            <h3 class="font-serif text-3xl font-medium text-dark-gray mb-8 text-center">Temas Aprendidos</h3>
+            
+            <div class="space-y-8">
+                <div class="border-l-4 border-warm-brown pl-8">
+                    <h4 class="text-2xl font-semibold text-warm-brown mb-4">HTML Básico - Estructura y Semántica</h4>
+                    <p class="text-gray-700 leading-relaxed text-lg">
+                        HTML (HyperText Markup Language) es el lenguaje de marcado estándar para crear páginas web. 
+                        Aprendí la estructura básica con elementos como &lt;html&gt;, &lt;head&gt;, &lt;body&gt;, 
+                        etiquetas semánticas como &lt;header&gt;, &lt;nav&gt;, &lt;main&gt;, &lt;section&gt;, 
+                        &lt;article&gt;, &lt;footer&gt;, y elementos de contenido como párrafos, listas, enlaces, 
+                        imágenes y formularios. La semántica correcta mejora la accesibilidad y SEO.
+                    </p>
+                </div>
+
+                <div class="border-l-4 border-warm-brown pl-8">
+                    <h4 class="text-2xl font-semibold text-warm-brown mb-4">HTML Avanzado - Formularios y Multimedia</h4>
+                    <p class="text-gray-700 leading-relaxed text-lg">
+                        Exploré elementos avanzados como formularios complejos con validación HTML5, tipos de input 
+                        especializados (email, date, range, color), elementos multimedia (&lt;video&gt;, &lt;audio&gt;, 
+                        &lt;canvas&gt;), APIs modernas como Web Storage, Geolocation, y técnicas de optimización 
+                        como lazy loading de imágenes, meta tags para SEO, y structured data para rich snippets.
+                    </p>
+                </div>
+
+                <div class="border-l-4 border-warm-brown pl-8">
+                    <h4 class="text-2xl font-semibold text-warm-brown mb-4">CSS Básico - Estilos y Selectores</h4>
+                    <p class="text-gray-700 leading-relaxed text-lg">
+                        CSS (Cascading Style Sheets) controla la presentación visual de HTML. Dominé selectores básicos 
+                        (elemento, clase, ID), propiedades fundamentales (color, font, margin, padding, border), 
+                        el modelo de caja (box model), unidades de medida (px, em, rem, %, vh, vw), y conceptos 
+                        de cascada, especificidad y herencia que determinan cómo se aplican los estilos.
+                    </p>
+                </div>
+
+                <div class="border-l-4 border-warm-brown pl-8">
+                    <h4 class="text-2xl font-semibold text-warm-brown mb-4">CSS Avanzado - Layout y Animaciones</h4>
+                    <p class="text-gray-700 leading-relaxed text-lg">
+                        Implementé técnicas avanzadas como Flexbox para layouts unidimensionales, CSS Grid para 
+                        layouts bidimensionales complejos, posicionamiento avanzado (relative, absolute, fixed, sticky), 
+                        transformaciones 2D y 3D, animaciones con @keyframes, transiciones suaves, variables CSS 
+                        (custom properties), y técnicas de responsive design con media queries.
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Ejercicios de Laboratorio -->
+        <div class="bg-white rounded-lg shadow-sm p-12 mb-12">
+            <h3 class="font-serif text-3xl font-medium text-dark-gray mb-8 text-center">Ejercicios de Laboratorio - Resultados</h3>
+            
+            <div class="grid md:grid-cols-2 gap-8">
+                <div class="bg-light-gray p-8 rounded-lg">
+                    <div class="text-warm-brown font-serif text-xl font-medium mb-4">Ejercicio 01</div>
+                    <h4 class="font-semibold text-dark-gray mb-3 text-lg">
+                        Estructura semántica HTML5
+                    </h4>
+                    <p class="text-gray-600 text-sm mb-4">
+                        <strong>Objetivo:</strong> Crear páginas web con estructura semántica correcta.
+                    </p>
+                    <p class="text-gray-700 leading-relaxed">
+                        Desarrollé páginas web utilizando elementos semánticos HTML5 apropiados: &lt;header&gt; para 
+                        encabezados, &lt;nav&gt; para navegación, &lt;main&gt; para contenido principal, &lt;section&gt; 
+                        para secciones temáticas, &lt;article&gt; para contenido independiente, &lt;aside&gt; para 
+                        contenido relacionado, y &lt;footer&gt; para pie de página. Implementé jerarquía correcta 
+                        de headings (h1-h6) y atributos de accesibilidad.
+                    </p>
+                </div>
+
+                <div class="bg-light-gray p-8 rounded-lg">
+                    <div class="text-warm-brown font-serif text-xl font-medium mb-4">Ejercicio 02</div>
+                    <h4 class="font-semibold text-dark-gray mb-3 text-lg">
+                        Formularios avanzados con validación
+                    </h4>
+                    <p class="text-gray-600 text-sm mb-4">
+                        <strong>Objetivo:</strong> Crear formularios complejos con validación HTML5.
+                    </p>
+                    <p class="text-gray-700 leading-relaxed">
+                        Construí formularios complejos utilizando diversos tipos de input (email, tel, date, range, color), 
+                        implementé validación nativa HTML5 con atributos como required, pattern, min, max, y minlength. 
+                        Agregué elementos como &lt;datalist&gt; para autocompletado, &lt;fieldset&gt; y &lt;legend&gt; 
+                        para agrupación, y personalicé mensajes de validación con JavaScript.
+                    </p>
+                </div>
+
+                <div class="bg-light-gray p-8 rounded-lg">
+                    <div class="text-warm-brown font-serif text-xl font-medium mb-4">Ejercicio 03</div>
+                    <h4 class="font-semibold text-dark-gray mb-3 text-lg">
+                        Layouts responsivos con Flexbox
+                    </h4>
+                    <p class="text-gray-600 text-sm mb-4">
+                        <strong>Objetivo:</strong> Implementar layouts flexibles y responsivos.
+                    </p>
+                    <p class="text-gray-700 leading-relaxed">
+                        Creé layouts responsivos utilizando Flexbox con propiedades como display: flex, flex-direction, 
+                        justify-content, align-items, flex-wrap, y flex-grow/shrink/basis. Implementé navegaciones 
+                        horizontales y verticales, centrado perfecto de elementos, distribución equitativa de espacio, 
+                        y layouts que se adaptan automáticamente a diferentes tamaños de pantalla.
+                    </p>
+                </div>
+
+                <div class="bg-light-gray p-8 rounded-lg">
+                    <div class="text-warm-brown font-serif text-xl font-medium mb-4">Ejercicio 04</div>
+                    <h4 class="font-semibold text-dark-gray mb-3 text-lg">
+                        CSS Grid para layouts complejos
+                    </h4>
+                    <p class="text-gray-600 text-sm mb-4">
+                        <strong>Objetivo:</strong> Crear layouts bidimensionales con CSS Grid.
+                    </p>
+                    <p class="text-gray-700 leading-relaxed">
+                        Desarrollé layouts complejos usando CSS Grid con propiedades como grid-template-columns/rows, 
+                        grid-gap, grid-area, y funciones como repeat(), minmax(), fr unit. Creé layouts de magazine, 
+                        dashboards, y galerías de imágenes que se reorganizan automáticamente. Implementé áreas de 
+                        grid nombradas para mayor claridad y mantenibilidad del código.
+                    </p>
+                </div>
+
+                <div class="bg-light-gray p-8 rounded-lg md:col-span-2">
+                    <div class="text-warm-brown font-serif text-xl font-medium mb-4">Ejercicio 05</div>
+                    <h4 class="font-semibold text-dark-gray mb-3 text-lg">
+                        Animaciones y transiciones CSS
+                    </h4>
+                    <p class="text-gray-600 text-sm mb-4">
+                        <strong>Objetivo:</strong> Implementar animaciones fluidas y efectos visuales.
+                    </p>
+                    <p class="text-gray-700 leading-relaxed">
+                        Creé animaciones complejas usando @keyframes para animaciones de carga, hover effects, 
+                        y micro-interacciones. Implementé transiciones suaves con transition property para cambios 
+                        de estado, transformaciones 2D y 3D con transform (rotate, scale, translate), y efectos 
+                        avanzados como parallax scrolling y animaciones activadas por scroll usando Intersection Observer API.
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Reflexión -->
+        <div class="bg-white rounded-lg shadow-sm p-12">
+            <h3 class="font-serif text-3xl font-medium text-dark-gray mb-8 text-center">Reflexión</h3>
+            
+            <div class="grid md:grid-cols-2 gap-12">
+                <div>
+                    <h4 class="text-2xl font-semibold text-warm-brown mb-6">¿Qué aprendí?</h4>
+                    <ul class="space-y-4 text-gray-700">
+                        <li class="flex items-start">
+                            <span class="text-warm-brown mr-3 mt-1">•</span>
+                            <span>Estructura semántica HTML5 para mejorar accesibilidad y SEO</span>
+                        </li>
+                        <li class="flex items-start">
+                            <span class="text-warm-brown mr-3 mt-1">•</span>
+                            <span>Formularios avanzados con validación nativa y experiencia de usuario optimizada</span>
+                        </li>
+                        <li class="flex items-start">
+                            <span class="text-warm-brown mr-3 mt-1">•</span>
+                            <span>Layouts modernos con Flexbox y CSS Grid para diseños responsivos</span>
+                        </li>
+                        <li class="flex items-start">
+                            <span class="text-warm-brown mr-3 mt-1">•</span>
+                            <span>Animaciones y transiciones CSS para mejorar la interactividad</span>
+                        </li>
+                        <li class="flex items-start">
+                            <span class="text-warm-brown mr-3 mt-1">•</span>
+                            <span>Técnicas avanzadas de CSS como variables, funciones y selectores complejos</span>
+                        </li>
+                        <li class="flex items-start">
+                            <span class="text-warm-brown mr-3 mt-1">•</span>
+                            <span>Optimización de rendimiento y mejores prácticas de desarrollo web</span>
+                        </li>
+                    </ul>
+                </div>
+
+                <div>
+                    <h4 class="text-2xl font-semibold text-warm-brown mb-6">¿Cómo aprendí?</h4>
+                    <ul class="space-y-4 text-gray-700">
+                        <li class="flex items-start">
+                            <span class="text-warm-brown mr-3 mt-1">•</span>
+                            <span>Construcción progresiva de proyectos desde básico hasta avanzado</span>
+                        </li>
+                        <li class="flex items-start">
+                            <span class="text-warm-brown mr-3 mt-1">•</span>
+                            <span>Experimentación práctica con diferentes propiedades y valores CSS</span>
+                        </li>
+                        <li class="flex items-start">
+                            <span class="text-warm-brown mr-3 mt-1">•</span>
+                            <span>Análisis de sitios web existentes para entender técnicas implementadas</span>
+                        </li>
+                        <li class="flex items-start">
+                            <span class="text-warm-brown mr-3 mt-1">•</span>
+                            <span>Uso de herramientas de desarrollo del navegador para debugging</span>
+                        </li>
+                        <li class="flex items-start">
+                            <span class="text-warm-brown mr-3 mt-1">•</span>
+                            <span>Consulta constante de documentación MDN y especificaciones W3C</span>
+                        </li>
+                        <li class="flex items-start">
+                            <span class="text-warm-brown mr-3 mt-1">•</span>
+                            <span>Iteración y refinamiento continuo basado en feedback visual</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="bg-dark-gray text-white py-8 mt-12">
+        <div class="container mx-auto px-6 text-center">
+            <p>&copy; 2024 Ruth Karina Fernández Bendezú - Semana 3</p>
+        </div>
+    </footer>
+</body>
+</html>
